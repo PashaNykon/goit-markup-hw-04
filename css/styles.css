@@ -7,6 +7,7 @@
   --herotitlebtn-filterbtn-hover: #ffffff;
   --filterbtn-footerlogo-team: #f4f4fd;
   --costumer-color: #8e8f99;
+  --footer-hover-focus: #31D0AA;
 }
 
 body {
@@ -445,7 +446,6 @@ img {
 .soc-icon-item {
   width: 40px;
   height: 40px; 
-
 }
 
 .soc-icon-link {
@@ -456,6 +456,10 @@ img {
   justify-content: center;
   align-items: center;
   background-color: rgba(255, 255, 255, 0.1);;
+}
+
+.soc-icon-link:is(:hover, :focus) {
+  background-color: var(--footer-hover-focus);
 }
 
 /* ======================PORTFOLIO.HTML======================= */
