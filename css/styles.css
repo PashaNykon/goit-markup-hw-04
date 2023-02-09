@@ -7,7 +7,7 @@
   --herotitlebtn-filterbtn-hover: #ffffff;
   --filterbtn-footerlogo-team: #f4f4fd;
   --costumer-color: #8e8f99;
-  --footer-hover-focus: #31D0AA;
+  --footer-hover-focus: #31d0aa;
 }
 
 body {
@@ -177,14 +177,18 @@ img {
 .hero {
   background-color: var(--main-color);
   max-width: 1440px;
-  background-image:linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-bg.jpg);
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/hero-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   padding-top: 188px;
   padding-bottom: 188px;
   margin: 0 auto;
- }
+}
 
 .hero-title {
   text-align: center;
@@ -196,7 +200,7 @@ img {
   margin-bottom: 48px;
   margin-left: auto;
   margin-right: auto;
- }
+}
 
 .hero-btn {
   display: block;
@@ -226,7 +230,7 @@ img {
   display: flex;
   gap: 24px;
   margin-bottom: 8px;
-  }
+}
 
 .about-icon-item {
   display: flex;
@@ -303,8 +307,7 @@ img {
 .team-item {
   width: calc((100% - 72) / 4);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16),
-    0px 2px 1px rgba(46, 47, 66, 0.08);;
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .employees {
@@ -325,18 +328,18 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--text-color);
+  padding-bottom: 8px;
 }
 
 .team-icons-list {
   display: flex;
   justify-content: center;
   gap: 24px;
-  margin-bottom: 32px;
-} 
+}
 
 .team-icons-item {
   width: 40px;
-  height: 40px; 
+  height: 40px;
 }
 
 .team-icons-link {
@@ -346,7 +349,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color:var(--web-herobtn-filterbtn-color);
+  background-color: var(--web-herobtn-filterbtn-color);
 }
 
 /* -------------------------------CUSTOMERS----------------------------------- */
@@ -384,8 +387,8 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  color:var(--costumer-color);
- }
+  color: var(--costumer-color);
+}
 
 .customers-icon {
   fill: currentColor;
@@ -437,7 +440,7 @@ img {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-bottom: 16px;
 }
 
@@ -448,7 +451,7 @@ img {
 
 .soc-icon-item {
   width: 40px;
-  height: 40px; 
+  height: 40px;
 }
 
 .soc-icon-link {
@@ -458,7 +461,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.1);;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .soc-icon-link:is(:hover, :focus) {
@@ -497,7 +500,8 @@ img {
   background-color: var(--hover-focus-color);
   color: var(--herotitlebtn-filterbtn-hover);
   border-color: var(--hover-focus-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .porfolio-list {
@@ -511,9 +515,15 @@ img {
   width: calc((100% - 48) / 3);
 }
 
+.porfolio-item-link {
+  display: block;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
 .porfolio-item-link:is(:hover, :focus) {
   display: block;
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .portfolio-title {
@@ -529,7 +539,7 @@ img {
   border-right: 1px solid var(--footer-text-color);
   border-bottom: 1px solid var(--footer-text-color);
   padding: 32px 16px;
-  }
+}
 
 .portfolio-text {
   font-size: 16px;
@@ -537,4 +547,3 @@ img {
   letter-spacing: 0.02em;
   color: var(--text-color);
 }
-
